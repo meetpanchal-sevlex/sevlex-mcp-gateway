@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #F8FAFC;
-  --sidebar-bg: #0A0C10;
-  --surface: #0E1014;
+  /* Base Backgrounds (The Armor) */
+  --background: #121212; /* Obsidian – Replaces Saturn zero-black */
+  --surface: #1A1A1A;    /* Dark Charcoal – Secondary Background / Cards */
+  --sidebar-bg: #161616;
   --surface-border: rgba(255, 255, 255, 0.08);
-  --sevlex-primary: #3B82F6;
-  --sevlex-cobalt: #2563EB;
-  --neon-green: #34D59A;
+
+  /* Action Colors (Mars 9 & Sun 1) */
+  --cta-primary: #D91E27;   /* Deep Crimson – Primary CTA / Main Buttons */
+  --cta-secondary: #F5B041; /* Stark Gold – Secondary CTA / Hover States */
+  --sevlex-primary: #D91E27;
+  --sevlex-cobalt: #B91C1C;
+
+  /* Typography & Accents (Clarity & Jupiter 3) */
+  --foreground: #F9FAFB;    /* Crisp Off-White – Primary Text */
+  --text-muted: #9CA3AF;    /* Cool Grey – Muted Text / Subtitles */
+  --accent-trust: #F4D03F;  /* Saffron Yellow – Trust Elements / Icons */
+  --neon-green: #F4D03F;
 }
 
 html.light, .light {
@@ -37,19 +46,24 @@ html.light ::selection {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-black-pure: #000000;
-  --color-gray-new-8: #131415;
-  --color-gray-new-10: #18191B;
-  --color-gray-new-15: #242628;
-  --color-gray-new-20: #303236;
-  --color-gray-new-30: #494B50;
-  --color-gray-new-40: #61646B;
-  --color-gray-new-50: #797D86;
-  --color-gray-new-60: #94979E;
-  --color-gray-new-70: #AFB1B6;
-  --color-gray-new-80: #C9CBCF;
-  --color-gray-new-90: #E4E5E7;
-  --color-green-52: #34D59A;
+    --color-surface: var(--surface);
+  --color-cta-primary: var(--cta-primary);
+  --color-cta-secondary: var(--cta-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-accent-trust: var(--accent-trust);
+  --color-black-pure: #121212;
+  --color-gray-new-8: #161616;
+  --color-gray-new-10: #1A1A1A;
+  --color-gray-new-15: #222222;
+  --color-gray-new-20: #2C2C2C;
+  --color-gray-new-30: #404040;
+  --color-gray-new-40: #5A5A5A;
+  --color-gray-new-50: #737373;
+  --color-gray-new-60: #9CA3AF;
+  --color-gray-new-70: #B4B4B4;
+  --color-gray-new-80: #D1D5DB;
+  --color-gray-new-90: #F9FAFB;
+  --color-green-52: #F4D03F;
   --font-sans: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: var(--font-mono), 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
 }
@@ -82,7 +96,19 @@ body {
 
 /* Sevlex Cyber Defense Gradient */
 .sevlex-gradient {
-  background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 45%, #2563EB 80%, #3B82F6 100%);
+  background: linear-gradient(135deg, #7F1D1D 0%, #991B1B 45%, #B91C1C 80%, #D91E27 100%);
+}
+
+.glow-crimson {
+  box-shadow: 0 0 25px -5px rgba(217, 30, 39, 0.35);
+}
+
+.glow-gold {
+  box-shadow: 0 0 25px -5px rgba(245, 176, 65, 0.3);
+}
+
+.glow-saffron {
+  box-shadow: 0 0 25px -5px rgba(244, 208, 63, 0.3);
 }
 
 .glow-blue {
