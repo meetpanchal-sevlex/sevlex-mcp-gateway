@@ -585,18 +585,6 @@ function DocsContent() {
 
           {/* Right Header CTAs */}
           <div className="flex items-center gap-2.5">
-            <button
-              onClick={toggleTheme}
-              title={isDark ? "Switch to light theme" : "Switch to dark theme"}
-              aria-label="Toggle Theme"
-              className={`p-2 rounded-lg border transition-colors cursor-pointer ${
-                isDark
-                  ? "border-[#222530] bg-[#12141C] text-gray-300 hover:text-white"
-                  : "border-gray-200 bg-gray-50 text-gray-700 hover:text-gray-900"
-              }`}
-            >
-              {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
-            </button>
             <a
               href="https://github.com/Sevlex/sevlex-mcp-gateway"
               target="_blank"

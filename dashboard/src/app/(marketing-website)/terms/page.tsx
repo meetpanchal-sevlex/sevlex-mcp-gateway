@@ -48,18 +48,6 @@ export default function TermsPage() {
           </div>
 
           <div className="flex items-center gap-2.5">
-            <button
-              onClick={toggleTheme}
-              title={isDark ? "Switch to light theme" : "Switch to dark theme"}
-              aria-label="Toggle Theme"
-              className={`p-2 rounded-full border transition-colors ${
-                isDark
-                  ? "border-white/[0.08] bg-[#141518] text-gray-300 hover:text-white hover:border-[#383A42]"
-                  : "border-[#E5E7EB] bg-[#F9FAFB] text-gray-700 hover:text-gray-900 hover:border-gray-300 shadow-xs"
-              }`}
-            >
-              {isDark ? <Sun className="size-3.5 text-amber-400" /> : <Moon className="size-3.5 text-slate-700" />}
-            </button>
             <a
               href="/console"
               className="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-full transition-colors duration-200 h-8 px-4 tracking-tight font-medium bg-[#34D59A] text-black hover:bg-[#2bc48b] text-xs font-mono font-bold"

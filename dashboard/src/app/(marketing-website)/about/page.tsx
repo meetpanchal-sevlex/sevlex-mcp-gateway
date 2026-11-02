@@ -69,24 +69,6 @@ export default function AboutPage() {
           </div>
 
           <div className="flex items-center gap-2.5">
-            {/* Theme Toggle Sun / Moon */}
-            <button
-              onClick={toggleTheme}
-              title={isDark ? "Switch to light theme" : "Switch to dark theme"}
-              aria-label="Toggle Theme"
-              className={`p-2 rounded-full border transition-colors ${
-                isDark
-                  ? "border-white/[0.08] bg-[#141518] text-gray-300 hover:text-white hover:border-[#383A42]"
-                  : "border-[#E5E7EB] bg-[#F9FAFB] text-gray-700 hover:text-gray-900 hover:border-gray-300 shadow-xs"
-              }`}
-            >
-              {isDark ? (
-                <Sun className="size-3.5 text-amber-400" />
-              ) : (
-                <Moon className="size-3.5 text-slate-700" />
-              )}
-            </button>
-
             <a
               href="https://github.com/Sevlex/sevlex-mcp-gateway"
               target="_blank"

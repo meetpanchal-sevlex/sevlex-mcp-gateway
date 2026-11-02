@@ -20,29 +20,6 @@
   --neon-green: #F4D03F;
 }
 
-html.light, .light {
-  --background: #F8FAFC;
-  --foreground: #090A0F;
-  --sidebar-bg: #F1F5F9;
-  --surface: #FFFFFF;
-  --surface-border: #E2E8F0;
-  --color-black-pure: #FFFFFF;
-  color-scheme: light;
-}
-
-/* ========================================================================= */
-/* ULTRA-PREMIUM LIGHT MODE THEME SYSTEM (CLEAN & DYNAMIC)                   */
-/* ========================================================================= */
-html.light body {
-  background-color: #F8FAFC !important;
-  color: #0F172A !important;
-}
-
-html.light ::selection {
-  background-color: rgba(52, 213, 154, 0.25);
-  color: #0F172A;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
